@@ -38,6 +38,31 @@ body .slider .slides #radio2:checked ~ .first {
 body .slider .slides #radio3:checked ~ .first {
   margin-left: -40%;
 }
+body .slider .slides #radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40D3DC;
+}
+body .slider .slides #radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40D3DC;
+}
+body .slider .slides #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40D3DC;
+}
+body .slider .slides .navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 560px;
+}
+body .slider .slides .navigation-auto div {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+body .slider .slides .navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
 body .slider .navigation-manual {
   position: absolute;
   width: 100%;

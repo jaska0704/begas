@@ -50,6 +50,37 @@ body {
             #radio3:checked ~ .first {
                 margin-left: -40%;
             }
+
+            #radio1:checked ~ .navigation-auto .auto-btn1{
+                background: #40D3DC;
+            }
+            #radio2:checked ~ .navigation-auto .auto-btn2{
+                background: #40D3DC;
+            }
+            #radio3:checked ~ .navigation-auto .auto-btn3{
+                background: #40D3DC;
+            }
+
+            .navigation-auto {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                margin-top: 560px;
+
+                div {
+                    border: 2px solid #40D3DC;
+                    padding: 5px;
+                    border-radius: 10px;
+                    transition: 1s;
+
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+                }
+            }
+
+
         }
 
         .navigation-manual {
